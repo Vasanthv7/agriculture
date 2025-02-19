@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, #004d00, #008000, #00cc00, #66ff66);
+        }
+        .hero {
+            background: url('vector-background.jpg') no-repeat center center/cover;
+            color: rgb(255, 255, 255);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .about {
+            padding: 50px;
+            background: #f4f4f4;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            background: #e0ffe0;
+            
+        }
+        .menu-box {
+            width: 300px;
+            padding: 10px;
+            background:  linear-gradient(45deg, #087d08, #1abd1aea, #00cc00, #66ff66);
+            box-shadow: 0 0 40px rgba(0,0,0,0.1);
+            text-align: center;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        .menu-box img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-box h3 {
+            color: white;
+            
+            padding: 1px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        Agriculture for a Sustainable Future
+    </div>
+    <div class="about">
+        <h2>About the Website</h2>
+        <p>This website helps farmers with crop suggestions, plant disease detection, and fertilizer recommendations.</p>
+    </div>
+    <div class="menu-container">
+        <div class="menu-box" onclick="location.href='crop-suggestion.html'">
+            <img src="image\icons8-planting-100.png" >
+            <h3>Crop Suggestion</h3>
+        </div>
+       
+        <div class="menu-box" onclick="location.href='fertilizer/fertilizer.html'">
+            <img src="image\icons8-fertilizer-100.png" alt="Fertilizer Suggestion">
+            <h3>Fertilizer Suggestion</h3>
+        </div>
+        <div class="menu-box">
+            <img src="image\icons8-disease-100 (1).png" alt="Plant Disease Detection">
+            <h3>Plant Disease Detection</h3>
+        </div>
+    </div>
+</body>
+</html>
